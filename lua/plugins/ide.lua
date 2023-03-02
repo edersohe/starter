@@ -1,0 +1,77 @@
+return {
+
+  -- lsp will be automatically installed with mason and loaded with lspconfig
+  {
+    "neovim/nvim-lspconfig",
+    opts = {
+      servers = {
+        clangd = {},
+        gopls = {},
+        pyright = {},
+        rust_analyzer = {},
+        tsserver = {},
+        elixirls = {},
+        svelte = {},
+        sqlls = {},
+        graphql = {},
+        ansiblels = {},
+        marksman = {},
+        lua_ls = {
+          Lua = {
+            workspace = { checkThirdParty = false },
+            telemetry = { enable = false },
+          },
+        },
+      },
+    },
+  },
+
+  -- add more treesitter parsers
+  {
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+      ensure_installed = {
+        "c",
+        "cpp",
+        "go",
+        "lua",
+        "python",
+        "rust",
+        "typescript",
+        "help",
+        "vim",
+        "gomod",
+        "gowork",
+        "svelte",
+        "elixir",
+        "eex",
+        "heex",
+        "javascript",
+        "tsx",
+        "comment",
+        "http",
+        "ruby",
+        "erlang",
+        "markdown",
+        "bash",
+        "sql",
+        "make",
+        "regex",
+        "dart",
+        "toml",
+        "markdown_inline",
+        "yaml",
+        "hcl",
+        "css",
+        "scss",
+        "dockerfile",
+        "graphql",
+        "proto",
+        "org",
+        "query",
+        "json",
+        "html",
+      },
+    },
+  },
+}
