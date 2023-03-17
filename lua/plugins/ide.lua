@@ -4,11 +4,13 @@ return {
   {
     "neovim/nvim-lspconfig",
     opts = {
+      autoformat = false,
       servers = {
         clangd = {},
         gopls = {},
         pyright = {},
         rust_analyzer = {},
+        jdtls = {},
         tsserver = {},
         elixirls = {},
         svelte = {},
@@ -70,7 +72,11 @@ return {
         "org",
         "query",
         "json",
+        "json5",
+        "jsonc",
+        "jsonnet",
         "html",
+        "java",
       },
     },
   },
