@@ -8,6 +8,8 @@ return {
   { "SmiteshP/nvim-navic", enabled = false },
   { "folke/neoconf.nvim", enabled = false },
   { "folke/neodev.nvim", enabled = false },
+  { "folke/trouble.nvim", enabled = false },
+  { "folke/todo-comments.nvim", enabled = false },
   { "dstein64/vim-startuptime", enabled = false },
   { "folke/persistence.nvim", enabled = false },
   { "MunifTanjim/nui.nvim", enabled = false },
